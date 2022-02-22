@@ -2,10 +2,6 @@
 
 > TypeScript / Atomic Design
 
-```
-img area
-```
-
 ## Usage
 
 - Make Container
@@ -14,7 +10,7 @@ img area
 docker-compose up -d
 ```
 
-- In Container
+- In the container
 
 ```
 docker-compose exec frontend bash
