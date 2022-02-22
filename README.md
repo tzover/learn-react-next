@@ -49,4 +49,14 @@ yarn create-next-app --typescript app
 |   [Vue.js](https://vuejs.org/)    | [Nuxt.js](https://nuxtjs.org/) |
 | [Angular.js](https://angular.io/) |               -                |
 
-## a
+## Next.js を選択する理由
+
+- 記述量が React に比べて減る(Routing)
+- バグのデバックがしやすい（何かしらの静的ページを表示してくれる）
+  > React だと真っ白いページが表示される
+- 表示されるページごとに情報を割り振れる(`<title></title>`で指定できる)
+
+## Next.js を選択するデメリット
+
+- フレームワークであるため特徴を把握する必要がある
+- Docker image が少し大きくなってしまう
