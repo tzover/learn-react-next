@@ -38,7 +38,15 @@ yarn start
 - Next.js \* Typescript
 
 ```
-
+yarn create-next-app --typescript app
 ```
 
-##
+## Tech comparison table
+
+|            Library(FW)            |           Framework            |
+| :-------------------------------: | :----------------------------: |
+| [React.js](https://reactjs.org/)  | [Next.js](https://nextjs.org/) |
+|   [Vue.js](https://vuejs.org/)    | [Nuxt.js](https://nuxtjs.org/) |
+| [Angular.js](https://angular.io/) |               -                |
+
+## a
