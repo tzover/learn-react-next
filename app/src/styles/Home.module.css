@@ -6,8 +6,9 @@
 }
 
 .flex_child {
-  width: 47.5vw;
-  height: 80vh;
+  overflow: scroll;
+  width: 45vw;
+  height: 70vh;
   background-color: cornsilk;
   border: 0.5rem solid #eee;
   padding: 0 1rem;

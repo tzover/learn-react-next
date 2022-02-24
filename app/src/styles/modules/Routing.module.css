@@ -1,29 +1,33 @@
 .flex_container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
 .flex_child {
-  width: 100%;
-  margin-left: 1rem;
   border: 1px solid cornflowerblue;
   padding: 0 1rem;
+  padding-bottom: 0.5rem;
 }
 
 .route {
   font-weight: bold;
-  font-size: x-large;
+  font-size: small;
 }
 
 .route span {
   font-weight: normal;
-  font-size: small;
+  font-size: x-small;
 }
 
 .route_container {
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: flex-end;
+}
+
+.route_container div {
+  margin-right: 0.5rem;
 }
 
 .adjust {
