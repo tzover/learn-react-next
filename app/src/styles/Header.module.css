@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  align-items: center;
+  background-color: aliceblue;
+  box-shadow: 0 0.5rem 1rem 0 #4e4e4e80;
+}
+.header div {
+  padding: 0 2rem;
+}
+
+.header p {
+  font-size: xx-large;
+  font-weight: bold;
+  color: cornflowerblue;
+}

@@ -1,0 +1,17 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+
+  width: 100vw;
+  background-color: aliceblue;
+  padding: 0.2rem;
+
+  border-top: 1px solid cornflowerblue;
+}
+
+.footer p {
+  width: 95vw;
+  text-align: right;
+  color: cornflowerblue;
+  opacity: 80%;
+}

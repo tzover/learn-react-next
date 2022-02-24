@@ -1,0 +1,31 @@
+.flex_container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex_child {
+  width: 100%;
+  margin-left: 1rem;
+  border: 1px solid cornflowerblue;
+  padding: 0 1rem;
+}
+
+.route {
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.route span {
+  font-weight: normal;
+  font-size: small;
+}
+
+.route_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.adjust {
+  margin-right: 1rem;
+}
