@@ -1,7 +1,24 @@
-import React from 'react'
+import type { NextPage } from 'next'
+// styling
+import styles from '../styles/globalRouterChild.module.css'
+// components
+import Layout from '../components/templates/Layout'
+import { useRouter } from 'next/router'
 
-const route = () => {
-  return <div>route</div>
+const Route: NextPage = () => {
+  const router = useRouter()
+  return (
+    <Layout pageTitle={'NextJS Practices'} appName={'NextJS Practice'}>
+      <div className={styles.container}>
+        <p className={styles.msg}>router.tsx</p>
+        <div className={styles.button_container}>
+          <button type='button' onClick={() => router.push('/')}>
+            Home
+          </button>
+        </div>
+      </div>
+    </Layout>
+  )
 }
 
-export default route
+export default Route
