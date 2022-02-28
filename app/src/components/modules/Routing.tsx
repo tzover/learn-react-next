@@ -63,7 +63,9 @@ const Routing = () => {
                 <Image src={'/next.svg'} width={20} height={20} />
               </div>
               <Link href={'/route2'}>
-                <RoutingButton path={'/route2'} name={'route2/index.tsx'} />
+                <button className={styles.route_container_button}>
+                  route2/index.tsx
+                </button>
               </Link>
             </div>
           </div>
@@ -71,7 +73,21 @@ const Routing = () => {
         {/* Dynamic */}
         <h3>Dynamic Routes</h3>
         <div className={styles.adjust}>
-          <div className={styles.flex_child}>aaaa</div>
+          <div className={styles.flex_child}>
+            <p className={styles.route}>
+              {baseUrl}route/dynamic/route[route-id].tsx
+            </p>
+
+            <div className={styles.route_container}>
+              <div>
+                <Image src={'/next.svg'} width={20} height={20} />
+              </div>
+              <RoutingButton
+                path='/route/dynamic'
+                name={'route/dynamic/route[route-id].tsx'}
+              />
+            </div>
+          </div>
         </div>
       </ChildLayout>
     </>
