@@ -1,6 +1,34 @@
 # memo
 
+- settings -> preferences -> debug -> disable javascript
+
 ```
+Page                                       Size     First Load JS
+┌ ○ /                                      6.84 kB        77.2 kB
+├   └ css/4c79e32b027dfb76.css             675 B
+├   /_app                                  0 B            70.4 kB
+├ ○ /404                                   879 B          71.2 kB
+├   └ css/7b4697e1d3a602ad.css             449 B
+├ λ /api/hello                             0 B            70.4 kB
+├ ○ /route                                 898 B          71.2 kB
+├ ○ /route/dynamic/params1/[[...params]]   1.13 kB        71.5 kB
+├ ○ /route/dynamic/params1/test            915 B          71.3 kB
+├ ○ /route/dynamic/params2/[...params]     1.12 kB        71.5 kB
+├ ○ /route/dynamic/params3/[productId]     951 B          71.3 kB
+├ ○ /route/route1                          903 B          71.3 kB
+├ ○ /route/route2                          905 B          71.3 kB
+└ ○ /route2                                906 B          71.3 kB
++ First Load JS shared by all              70.4 kB
+  ├ chunks/framework-91d7f78b5b4003c8.js   42 kB
+  ├ chunks/main-1e7421553b9673ee.js        26.9 kB
+  ├ chunks/pages/_app-b6514e4dc23feac6.js  640 B
+  ├ chunks/webpack-514908bffb652963.js     770 B
+  └ css/27d177a30947857b.css               194 B
+
+λ  (Server)  server-side renders at runtime (uses getInitialProps or getServerSideProps)
+○  (Static)  automatically rendered as static HTML (uses no initial props)
+
+
 Page                              Size     First Load JS
 ┌ ○ /                             370 B          67.3 kB
 ├   /_app                         0 B            66.9 kB

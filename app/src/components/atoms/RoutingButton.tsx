@@ -1,3 +1,4 @@
+import { memo } from 'react'
 import { useRouter } from 'next/router'
 import styles from '../../styles/atoms/RoutingButton.module.css'
 
@@ -6,7 +7,7 @@ interface Props {
   name: string
 }
 
-const RoutingButton = (props: Props) => {
+const RoutingButton = memo((props: Props) => {
   const { name, path = '/' } = props
   const router = useRouter()
   return (
@@ -18,6 +19,6 @@ const RoutingButton = (props: Props) => {
       {name}
     </button>
   )
-}
+})
 
 export default RoutingButton
