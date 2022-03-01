@@ -1,5 +1,5 @@
 import { ReactNode } from 'react'
-import styles from '../../styles/Layout.module.css'
+import styles from '../../styles/templates/Layout.module.css'
 import Header from '../modules/Header'
 import Footer from '../modules/Footer'
 

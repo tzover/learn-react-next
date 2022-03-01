@@ -1,3 +1,23 @@
+# memo
+
+```
+Page                              Size     First Load JS
+┌ ○ /                             370 B          67.3 kB
+├   /_app                         0 B            66.9 kB
+└ ○ /404                          194 B          67.1 kB
++ First Load JS shared by all     66.9 kB
+  ├ chunks/framework.b97a0e.js    42 kB
+  ├ chunks/main.c4f254.js         23.6 kB
+  ├ chunks/pages/_app.acce9c.js   555 B
+  ├ chunks/webpack.1a8a25.js      729 B
+  └ css/ddf05e9568a1b0bff90b.css  1.34 kB
+
+λ  (Server)  server-side renders at runtime (uses getInitialProps or getServerSideProps)
+○  (Static)  automatically rendered as static HTML (uses no initial props)
+●  (SSG)     automatically generated as static HTML + JSON (uses getStaticProps)
+   (ISR)     incremental static regeneration (uses revalidate in getStaticProps)
+```
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

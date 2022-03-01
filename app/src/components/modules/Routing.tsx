@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 // style
@@ -10,6 +11,8 @@ import RoutingButton from '../atoms/RoutingButton'
 import { baseUrl } from '../../contexts/AppBasicContext'
 
 const Routing = () => {
+  const [params1, setParams1] = useState('')
+  const [params2, setParams2] = useState('')
   return (
     <>
       <SubTitle title={'Routing'} />
@@ -72,21 +75,70 @@ const Routing = () => {
         </div>
         {/* Dynamic */}
         <h3>Dynamic Routes</h3>
-        <div className={styles.adjust}>
-          <div className={styles.flex_child}>
-            <p className={styles.route}>
-              {baseUrl}route/dynamic/route[route-id].tsx
-            </p>
-
-            <div className={styles.route_container}>
-              <div>
-                <Image src={'/next.svg'} width={20} height={20} />
-              </div>
-              <RoutingButton
-                path='/route/dynamic'
-                name={'route/dynamic/route[route-id].tsx'}
-              />
+        <div className={styles.flex_child}>
+          {/* params1 */}
+          <p className={styles.route}>{baseUrl}route/dynamic/params1/***/***</p>
+          <div className={styles.route_container}>
+            <p className={styles.path}>RoutingPath:</p>
+            <input
+              type='text'
+              onChange={(e) => setParams1(e.target.value)}
+              placeholder='params1 (test)'
+            />
+            <p className={styles.path}>/</p>
+            <input
+              type='text'
+              onChange={(e) => setParams2(e.target.value)}
+              placeholder='params2'
+            />
+            <div>
+              <Image src={'/next.svg'} width={20} height={20} />
             </div>
+            <RoutingButton
+              path={`/route/dynamic/params1/${params1}/${params2}`}
+              name={'Go'}
+            />
+          </div>
+          {/* params2 */}
+          <p className={styles.route}>{baseUrl}route/dynamic/params2/***/***</p>
+          <div className={styles.route_container}>
+            <p className={styles.path}>RoutingPath:</p>
+            <input
+              type='text'
+              onChange={(e) => setParams1(e.target.value)}
+              placeholder='params1'
+            />
+            <p className={styles.path}>/</p>
+            <input
+              type='text'
+              onChange={(e) => setParams2(e.target.value)}
+              placeholder='params2'
+            />
+            <div>
+              <Image src={'/next.svg'} width={20} height={20} />
+            </div>
+            <RoutingButton
+              path={`/route/dynamic/params2/${params1}/${params2}`}
+              name={'Go'}
+            />
+          </div>
+          {/* params3 */}
+          <p className={styles.route}>{baseUrl}route/dynamic/params3/***</p>
+          <div className={styles.route_container}>
+            <p className={styles.path}>RoutingPath:</p>
+            <input
+              type='text'
+              onChange={(e) => setParams1(e.target.value)}
+              placeholder='productId'
+            />
+
+            <div>
+              <Image src={'/next.svg'} width={20} height={20} />
+            </div>
+            <RoutingButton
+              path={`/route/dynamic/params3/${params1}/${params2}`}
+              name={'Go'}
+            />
           </div>
         </div>
       </ChildLayout>

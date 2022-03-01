@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import styles from '../../styles/Header.module.css'
+import styles from '../../styles/modules/Header.module.css'
 
 interface Props {
   pageTitle: string

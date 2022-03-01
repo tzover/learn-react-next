@@ -10,7 +10,7 @@ const Route: NextPage = () => {
   return (
     <Layout pageTitle={'NextJS Practices'} appName={'NextJS Practice'}>
       <div className={styles.container}>
-        <p className={styles.msg}>router.tsx</p>
+        <p className={styles.msg}>route.tsx</p>
         <div className={styles.button_container}>
           <button type='button' onClick={() => router.push('/')}>
             Home
