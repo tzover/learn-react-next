@@ -1,9 +1,11 @@
 import type { NextPage } from 'next'
+import { useRouter } from 'next/router'
+
 // styling
 import styles from '../styles/404.module.css'
+
 // components
 import Layout from '../components/templates/Layout'
-import { useRouter } from 'next/router'
 
 const PageNotFound: NextPage = () => {
   const router = useRouter()

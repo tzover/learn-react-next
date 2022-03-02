@@ -1,7 +1,9 @@
 import type { NextPage } from 'next'
 import { useRouter } from 'next/router'
+
 // styling
 import styles from '../../../../styles/globalRouterChild.module.css'
+
 // components
 import Layout from '../../../../components/templates/Layout'
 import PageNotFound from '../../../404'

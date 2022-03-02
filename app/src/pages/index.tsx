@@ -1,6 +1,8 @@
 import type { NextPage } from 'next'
+
 // styling
 import styles from '../styles/Home.module.css'
+
 // components
 import Layout from '../components/templates/Layout'
 import Routing from '../components/modules/Routing'

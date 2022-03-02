@@ -14,8 +14,11 @@ const Rendering = () => {
         <h3>fallback (getStaticPaths)</h3>
         <div className={styles.flex_container}>
           <RoutingButton path='/rendering/fallback/false' name={'false'} />
-          <RoutingButton path='/' name={'true'} />
-          <RoutingButton path='/' name={'blocking'} />
+          <RoutingButton path='/rendering/fallback/true' name={'true'} />
+          <RoutingButton
+            path='/rendering/fallback/blocking'
+            name={'blocking'}
+          />
         </div>
         <h3>revalidate (getStaticProps)</h3>
         <div className={styles.flex_container}>aaaa</div>

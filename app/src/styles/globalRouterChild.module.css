@@ -6,6 +6,16 @@
   padding: 10rem;
 }
 
+.route_container {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 1rem;
+}
+.route_container_child {
+  margin: 0 0.5rem;
+}
+
 .msg {
   text-align: center;
   font-size: xx-large;

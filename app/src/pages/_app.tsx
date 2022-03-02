@@ -1,6 +1,8 @@
-import '../styles/globals.css'
 import Head from 'next/head'
 import { AppProps } from 'next/app'
+
+// styling
+import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return (

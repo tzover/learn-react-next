@@ -23,7 +23,7 @@ const FallbackSample = (props: Props) => {
   return (
     <Layout pageTitle={'NextJS Practices'} appName={'NextJS Practice'}>
       <div className={styles.container}>
-        <p className={styles.msg}>Fallback false version</p>
+        <p className={styles.msg}>Fallback blocking version</p>
         {tasks.map((item) => (
           <div key={item.id} className={styles.route_container}>
             <p>TaskNo.{item.id}</p>
