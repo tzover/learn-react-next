@@ -10,12 +10,13 @@ const Another = () => {
     <>
       <SubTitle title={'Another'} />
       <ChildLayout>
-        <h3>page404 page500</h3>
-        <div className={styles.flex_container}>aaaaa</div>
-        <h3>next/router</h3>
-        <div className={styles.flex_container}>aaaaa</div>
-        <h3>next/image</h3>
-        <div className={styles.flex_container}>aaaaa</div>
+        <div className={styles.flex_container}>
+          <ul>
+            <li>page404 page500</li>
+            <li>next/router</li>
+            <li>next/image</li>
+          </ul>
+        </div>
       </ChildLayout>
     </>
   )

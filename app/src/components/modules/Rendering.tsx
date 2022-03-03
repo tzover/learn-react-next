@@ -27,6 +27,7 @@ const Rendering = () => {
             name={'default'}
           />
           <RoutingButton path='/rendering/revalidate/true' name={'true'} />
+          <RoutingButton path='/rendering/revalidate/swr' name={'(useSER)'} />
         </div>
       </ChildLayout>
     </>

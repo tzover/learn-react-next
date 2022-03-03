@@ -8,7 +8,7 @@
   padding: 1rem;
 }
 
-.flex_container button {
+.flex_container li {
   font-size: large;
-  padding: 1rem;
+  padding: 0.5rem;
 }
