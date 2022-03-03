@@ -21,7 +21,13 @@ const Rendering = () => {
           />
         </div>
         <h3>revalidate (getStaticProps)</h3>
-        <div className={styles.flex_container}>aaaa</div>
+        <div className={styles.flex_container}>
+          <RoutingButton
+            path='/rendering/revalidate/default'
+            name={'default'}
+          />
+          <RoutingButton path='/rendering/revalidate/true' name={'true'} />
+        </div>
       </ChildLayout>
     </>
   )
