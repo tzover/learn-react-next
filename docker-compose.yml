@@ -1,8 +1,8 @@
-version: '3.3'
+version: "3.3"
 services:
   frontend:
-    image: ${IMAGE_BASENAME}/ui:${TAG}
-    container_name: ${CONTAINER_BASENAME}-ui
+    image: ${IMAGE_BASENAME}/frontend:${TAG}
+    container_name: ${CONTAINER_BASENAME}-frontend
     build:
       context: .
       dockerfile: Dockerfile
