@@ -19,7 +19,7 @@ COPY ./app/ /home/${USER_NAME}/app/
 
 RUN yarn install
 
-RUN yarn build
+# RUN yarn build
 
 RUN echo "root:root" | chpasswd \
     && usermod -aG sudo ${USER_NAME} \
